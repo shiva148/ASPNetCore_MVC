@@ -10,9 +10,27 @@ namespace MyBookStore.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "MyBook";
+            return View();
+            //return View("TempView/Other.cshtml");
+            //return View("~/TempView/Other.cshtml");
+            //return View("../../TempView/Other");
+
+            //var obj = new { Id = 1, Name = "Nitish" };
+            //return View("ContactUs",obj);
+
+            //return View(obj);
+            //return View("Contactus");
+        }
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }
